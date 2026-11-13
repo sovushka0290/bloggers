@@ -3,6 +3,8 @@ import { Hero } from "@/components/Hero";
 import { NominationCard } from "@/components/NominationCard";
 import { formatTenge, getNominations, getSiteConfig } from "@/lib/data";
 
+export const dynamic = "force-static";
+
 export default async function HomePage() {
   const [site, nominations] = await Promise.all([
     getSiteConfig(),

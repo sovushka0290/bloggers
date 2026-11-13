@@ -7,6 +7,8 @@ export const metadata: Metadata = {
   description: "Автор и создатель национальной премии Bloggers Awards Kazakhstan.",
 };
 
+export const dynamic = "force-static";
+
 export default async function AuthorPage() {
   const site = await getSiteConfig();
 

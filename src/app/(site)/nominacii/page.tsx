@@ -7,6 +7,8 @@ export const metadata: Metadata = {
   title: "Номинации",
 };
 
+export const dynamic = "force-static";
+
 export default async function NominationsPage() {
   const nominations = await getNominations();
 

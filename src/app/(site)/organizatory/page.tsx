@@ -7,6 +7,8 @@ export const metadata: Metadata = {
   description: "Организаторы национальной премии Bloggers Awards Kazakhstan 2026.",
 };
 
+export const dynamic = "force-static";
+
 export default async function OrganizersPage() {
   const site = await getSiteConfig();
 

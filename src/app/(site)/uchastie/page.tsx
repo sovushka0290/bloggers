@@ -3,6 +3,8 @@ import { ParticipantForm } from "@/components/ParticipantForm";
 import { SectionHeading } from "@/components/SectionHeading";
 import { formatTenge, getSiteConfig } from "@/lib/data";
 
+export const dynamic = "force-static";
+
 export const metadata: Metadata = {
   title: "Участие",
 };

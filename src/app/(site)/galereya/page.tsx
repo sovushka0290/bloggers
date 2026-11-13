@@ -6,6 +6,8 @@ export const metadata: Metadata = {
   title: "Галерея",
 };
 
+export const dynamic = "force-static";
+
 const labels: Record<string, string> = {
   announce: "Анонсы",
   organizers: "Организаторы",

@@ -7,6 +7,8 @@ export const metadata: Metadata = {
   title: "Партнёры",
 };
 
+export const dynamic = "force-static";
+
 export default async function PartnersPage() {
   const partners = await getPartners();
 

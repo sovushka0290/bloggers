@@ -8,6 +8,8 @@ export const metadata: Metadata = {
   title: "Номинанты",
 };
 
+export const dynamic = "force-static";
+
 export default async function NomineesPage() {
   const nominations = await getNominations();
   const all = nominations.flatMap((n) =>

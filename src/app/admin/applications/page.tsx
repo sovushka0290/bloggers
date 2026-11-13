@@ -3,6 +3,8 @@ import { redirect } from "next/navigation";
 import { getAdminSession } from "@/lib/auth";
 import { getApplications } from "@/lib/data";
 
+export const dynamic = "force-dynamic";
+
 export default async function AdminApplicationsPage() {
   const role = await getAdminSession();
   if (!role) redirect("/admin/login");

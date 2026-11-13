@@ -6,6 +6,8 @@ export const metadata: Metadata = {
   title: "Контакты",
 };
 
+export const dynamic = "force-static";
+
 export default async function ContactsPage() {
   const site = await getSiteConfig();
 

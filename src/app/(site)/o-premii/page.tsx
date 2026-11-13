@@ -7,6 +7,8 @@ export const metadata: Metadata = {
   title: "О премии",
 };
 
+export const dynamic = "force-static";
+
 export default async function AboutPage() {
   const site = await getSiteConfig();
 

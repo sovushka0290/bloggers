@@ -4,6 +4,8 @@ import { getAdminSession } from "@/lib/auth";
 import { getNominations } from "@/lib/data";
 import { NominationsAdmin } from "@/components/admin/NominationsAdmin";
 
+export const dynamic = "force-dynamic";
+
 export default async function AdminNominationsPage() {
   const role = await getAdminSession();
   if (!role) redirect("/admin/login");
