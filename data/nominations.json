@@ -1,0 +1,122 @@
+[
+  {
+    "id": "moms",
+    "order": 1,
+    "code": "01",
+    "slug": "moms",
+    "title": "MOMS",
+    "subtitle": "Мамы-блогеры",
+    "description": "Номинация для мам-блогеров, которые вдохновляют аудиторию честным контентом о семье, материнстве и жизни.",
+    "nominees": []
+  },
+  {
+    "id": "lifestyle",
+    "order": 2,
+    "code": "02",
+    "slug": "lifestyle",
+    "title": "LIFESTYLE",
+    "subtitle": "Стиль жизни",
+    "description": "Авторы, создающие атмосферу повседневной эстетики, вдохновения и качественного lifestyle-контента.",
+    "nominees": []
+  },
+  {
+    "id": "sports",
+    "order": 3,
+    "code": "03",
+    "slug": "sports",
+    "title": "SPORTS",
+    "subtitle": "Спорт",
+    "description": "Инфлюенсеры и атлеты, продвигающие спорт, здоровье и активный образ жизни.",
+    "nominees": []
+  },
+  {
+    "id": "fashion",
+    "order": 4,
+    "code": "04",
+    "slug": "fashion",
+    "title": "FASHION",
+    "subtitle": "Мода",
+    "description": "Лидеры мнений в мире моды, стиля и fashion-индустрии Казахстана.",
+    "nominees": []
+  },
+  {
+    "id": "beauty",
+    "order": 5,
+    "code": "05",
+    "slug": "beauty",
+    "title": "BEAUTY",
+    "subtitle": "Красота",
+    "description": "Эксперты и блогеры beauty-сферы: макияж, уход, эстетика и тренды.",
+    "nominees": []
+  },
+  {
+    "id": "business",
+    "order": 6,
+    "code": "06",
+    "slug": "business",
+    "title": "BUSINESS",
+    "subtitle": "Бизнес",
+    "description": "Предприниматели и бизнес-инфлюенсеры, делящиеся опытом роста и лидерства.",
+    "nominees": []
+  },
+  {
+    "id": "expert",
+    "order": 7,
+    "code": "07",
+    "slug": "expert",
+    "title": "EXPERT",
+    "subtitle": "Эксперты",
+    "description": "Профессионалы и эксперты, формирующие экспертный контент и доверие аудитории.",
+    "nominees": []
+  },
+  {
+    "id": "travel",
+    "order": 8,
+    "code": "08",
+    "slug": "travel",
+    "title": "TRAVEL",
+    "subtitle": "Путешествия",
+    "description": "Тревел-блогеры, открывающие направления, культуру и новые впечатления.",
+    "nominees": []
+  },
+  {
+    "id": "food",
+    "order": 9,
+    "code": "09",
+    "slug": "food",
+    "title": "FOOD",
+    "subtitle": "Еда",
+    "description": "Гастро-блогеры и food-креаторы о вкусе, ресторанах и кулинарной культуре.",
+    "nominees": []
+  },
+  {
+    "id": "education",
+    "order": 10,
+    "code": "10",
+    "slug": "education",
+    "title": "EDUCATION",
+    "subtitle": "Образование",
+    "description": "Авторы образовательного контента, развивающие знания и навыки аудитории.",
+    "nominees": []
+  },
+  {
+    "id": "humor",
+    "order": 11,
+    "code": "11",
+    "slug": "humor",
+    "title": "HUMOR",
+    "subtitle": "Юмор",
+    "description": "Креаторы юмористического контента, создающие вирусные и узнаваемые образы.",
+    "nominees": []
+  },
+  {
+    "id": "models",
+    "order": 12,
+    "code": "12",
+    "slug": "models",
+    "title": "MODELS",
+    "subtitle": "Модели",
+    "description": "Модели и визуальные инфлюенсеры, задающие эстетику и сценический образ.",
+    "nominees": []
+  }
+]

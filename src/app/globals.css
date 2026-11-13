@@ -1,0 +1,201 @@
+@import "tailwindcss";
+
+:root {
+  --burgundy: #540d20;
+  --wine: #6b1022;
+  --crimson: #8b1028;
+  --gold: #c09a55;
+  --gold-light: #e8d5a8;
+  --gold-dark: #8b6a2e;
+  --champagne: #f6f0e8;
+  --ink: #111014;
+  --velvet-glow: rgba(192, 154, 85, 0.18);
+  --paper: rgba(246, 240, 232, 0.04);
+}
+
+@theme inline {
+  --color-burgundy: var(--burgundy);
+  --color-wine: var(--wine);
+  --color-crimson: var(--crimson);
+  --color-gold: var(--gold);
+  --color-gold-light: var(--gold-light);
+  --color-gold-dark: var(--gold-dark);
+  --color-champagne: var(--champagne);
+  --color-ink: var(--ink);
+  --font-display: var(--font-display);
+  --font-body: var(--font-body);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-height: 100%;
+  background: var(--ink);
+  color: var(--champagne);
+  font-family: var(--font-body), system-ui, sans-serif;
+  text-rendering: optimizeLegibility;
+}
+
+::selection {
+  background: color-mix(in srgb, var(--gold) 55%, transparent);
+  color: var(--ink);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.font-display {
+  font-family: var(--font-display), Georgia, "Times New Roman", serif;
+}
+
+.velvet-bg {
+  background:
+    radial-gradient(ellipse 80% 50% at 50% -10%, rgba(192, 154, 85, 0.16), transparent 55%),
+    radial-gradient(ellipse 60% 40% at 100% 20%, rgba(139, 16, 40, 0.35), transparent 50%),
+    radial-gradient(ellipse 50% 40% at 0% 80%, rgba(84, 13, 32, 0.55), transparent 45%),
+    linear-gradient(180deg, #3a0816 0%, var(--burgundy) 35%, #2a0610 100%);
+}
+
+.velvet-curtains {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background:
+    linear-gradient(90deg, rgba(20, 4, 8, 0.72) 0%, transparent 18%, transparent 82%, rgba(20, 4, 8, 0.72) 100%),
+    repeating-linear-gradient(
+      90deg,
+      transparent 0,
+      transparent 28px,
+      rgba(0, 0, 0, 0.08) 28px,
+      rgba(0, 0, 0, 0.08) 30px
+    );
+  opacity: 0.85;
+  mask-image: linear-gradient(90deg, black 0%, transparent 22%, transparent 78%, black 100%);
+}
+
+.paper-texture {
+  background-image:
+    radial-gradient(rgba(255, 255, 255, 0.03) 0.6px, transparent 0.6px),
+    linear-gradient(180deg, rgba(246, 240, 232, 0.03), transparent 40%);
+  background-size: 3px 3px, 100% 100%;
+}
+
+.gold-frame {
+  border: 1px solid color-mix(in srgb, var(--gold) 65%, transparent);
+  box-shadow:
+    inset 0 0 0 1px color-mix(in srgb, var(--gold-light) 25%, transparent),
+    0 0 0 1px color-mix(in srgb, var(--gold-dark) 35%, transparent);
+}
+
+.gold-text {
+  background: linear-gradient(135deg, var(--gold-light), var(--gold) 45%, var(--gold-dark));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.gold-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.85rem 1.6rem;
+  border-radius: 999px;
+  border: 1px solid color-mix(in srgb, var(--gold-light) 55%, var(--gold));
+  background: linear-gradient(180deg, #d4b06a 0%, var(--gold) 48%, #9a7635 100%);
+  color: var(--ink);
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, filter 0.25s ease;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.28), inset 0 1px 0 rgba(255, 255, 255, 0.35);
+}
+
+.gold-btn:hover {
+  transform: translateY(-1px);
+  filter: brightness(1.05);
+  box-shadow: 0 14px 36px rgba(192, 154, 85, 0.28), inset 0 1px 0 rgba(255, 255, 255, 0.4);
+}
+
+.ghost-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.85rem 1.6rem;
+  border-radius: 999px;
+  border: 1px solid color-mix(in srgb, var(--gold) 55%, transparent);
+  color: var(--champagne);
+  background: color-mix(in srgb, var(--burgundy) 35%, transparent);
+  letter-spacing: 0.04em;
+  transition: background 0.25s ease, border-color 0.25s ease, transform 0.25s ease;
+}
+
+.ghost-btn:hover {
+  background: color-mix(in srgb, var(--crimson) 35%, transparent);
+  border-color: var(--gold);
+  transform: translateY(-1px);
+}
+
+.section-title {
+  font-family: var(--font-display), Georgia, serif;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  line-height: 1.1;
+}
+
+.fade-up {
+  animation: fadeUp 0.9s ease both;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+.shimmer-line {
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--gold), transparent);
+  background-size: 200% 100%;
+  animation: shimmer 4s linear infinite;
+}
+
+.red-carpet {
+  background:
+    linear-gradient(90deg, transparent, rgba(139, 16, 40, 0.55), transparent),
+    repeating-linear-gradient(
+      90deg,
+      #6b1022 0,
+      #6b1022 12px,
+      #540d20 12px,
+      #540d20 24px
+    );
+}
+
+.admin-shell {
+  background: #16080e;
+  color: var(--champagne);
+}
